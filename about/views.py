@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
+def about(request):
     return HttpResponse("<h1>Hola! This is me!</h1>")
