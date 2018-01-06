@@ -14,15 +14,15 @@
   <body>
   {% include 'home/includes/htmlsnippet.html' %}
 	  <header>
-		 <div class="container" style="background: lightblue">
+		 <div class="container-fluid bg-dark text-white">
 			 <div class = "row">
-				 <div class="col-4" align="center"><a href='/'>Home</a></div>
-				 <div class="col-4" align="center"><a href='/about/'>About</a></div>
-				 <div class="col-4" align="center"><a href='/contact/'>Contact</a></div>
+				 <div class="col-4" align="center"><a class="text-white" href='/'>Home</a></div>
+				 <div class="col-4" align="center"><a class="text-white" href='/about/'>About</a></div>
+				 <div class="col-4" align="center"><a class="text-white" href='/contact/'>Contact</a></div>
 			 </div>
 		 </div>
 	  </header>
-	 <div class="container">
+	 <div class="container-fluid">
 		 <div class="row">
 			<img src="/static/home/evening.png" alt="evening theme" width="100%" height="100%">
 		 </div>
@@ -32,7 +32,7 @@
 		{% endblock %}
 	 </div>
 	 <footer>
-		<div class="container">
+		<div class="container-fluid">
 			<p><a href="#" target="blank">Find me on Facebook</a></p>
 		</div>
 	</footer>
