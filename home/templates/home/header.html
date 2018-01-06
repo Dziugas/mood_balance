@@ -1,40 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
     <title>Mood Balance</title>
 
-  </head>
-  <body>
-  {% include 'home/includes/jumbotron.html' %}
-	  <header>
-		 <div class="container-fluid bg-dark text-white">
-			 <div class = "row">
-				 <div class="col-4" align="center"><a class="text-white lead" href='/'>Home</a></div>
-				 <div class="col-4" align="center"><a class="text-white lead" href='/about/'>About</a></div>
-				 <div class="col-4" align="center"><a class="text-white lead" href='/contact/'>Contact</a></div>
-			 </div>
-		 </div>
-	  </header>
-	 <div class="container-fluid">
-		 <div class="row">
-			<img src="/static/home/evening.png" alt="evening theme" width="100%" height="100%">
-		 </div>
-	 </div>
-	 <div class='container'>
-	    {% block content %}
-		{% endblock %}
-	 </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  </body>
+</head>
+<body>
+<header>
+    {% include 'home/includes/jumbotronHeader.html' %}
+</header>
+<div class="container-fluid bg-dark text-white">
+    <div class="row">
+        <div class="col-4" align="center"><a class="text-white lead" href='/'>Home</a></div>
+        <div class="col-4" align="center"><a class="text-white lead" href='/about/'>About</a></div>
+        <div class="col-4" align="center"><a class="text-white lead" href='/contact/'>Contact</a></div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <img src="/static/home/evening.png" alt="evening theme" width="100%" height="100%">
+    </div>
+</div>
+
+<div class="container">
+    <!-- cards -->
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Latest post</h3>
+                    <p>This will be the latest blog post</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- cards -->
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Latest post</h3>
+                    <p>This will be the second latest blog post</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    {% block content %}
+    {% endblock %}
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+</body>
 </html>
