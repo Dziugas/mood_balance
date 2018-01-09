@@ -6,4 +6,5 @@ urlpatterns = [
     url((r'^about/'), include('about.urls')),
     url((r'^$'), include('home.urls')),
     url((r'^contact/'), include('contact.urls')),
+    url((r'^blog/'), include('blog.url'))
 ]
