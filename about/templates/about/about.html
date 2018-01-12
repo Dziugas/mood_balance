@@ -1,24 +1,28 @@
-{% extends 'contact/header.html' %}
+{% extends 'base_layout.html' %}
 {% block content %}
-<nav class="navbar navbar-toggleable-sm bg-light navbar-light">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href='/'>Home</a>
-                <a class="nav-item nav-link" href='/blog/'>Blog</a>
-                <a class="nav-item nav-link active" href='/about/'>About</a>
-                <a class="nav-item nav-link" href='/contact/'>Contact</a>
-            </div>
+
+<div class="container text-center">
+    <h4 class="text-center text-bold"><strong>About Me</strong></h4>
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <img src="/static/me2.jpg" class="img-fluid">
         </div>
+        <div class="col-2"></div>
     </div>
-</nav>
-<div class="jumbotron jumbotron-fluid bg-faded text-muted text-center mb-0">
-    <div class="container">
-        <h1 class="display-1">Mood Balance</h1>
-        <p class="lead">Turn on the light</p>
+    <br>
+    <div class="row">
+        <p class="col-2"></p>
+        <p class="col-8 lead text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has
+            been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p class="col-2"></p>
     </div>
 </div>
 
