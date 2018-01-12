@@ -1,0 +1,60 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Get in touch</title>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-sm bg-light navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href='/'>Home</a>
+                <a class="nav-item nav-link" href='/blog/'>Blog</a>
+                <a class="nav-item nav-link" href='/about/'>About</a>
+                <a class="nav-item nav-link" href='/contact/'>Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid bg-inverse text-muted text-center mb-0">
+    <div class="container">
+        <h1 class="display-3">Mood Balance</h1>
+        <p class="lead">Turn on the light</p>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <div class="jumbotron jumbotron-fluid bg-inverse text-muted mb-0">
+        <div class="container text-center">
+            <p class="lead"><a class="text-white text-muted" href="#" target="blank">Find me on Facebook</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+</html>
