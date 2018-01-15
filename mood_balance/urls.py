@@ -7,10 +7,11 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url((r'^about/'), include('about.urls')),
-    url((r'^$'), include('home.urls')),
-    url((r'^contact/'), include('contact.urls')),
-    url((r'^blog/'), include('blog.url'))
+    url(r'^about/', include('about.urls')),
+    url(r'^$', include('home.urls')),
+    url(r'^contact/', include('contact.urls')),
+    url(r'^blog/', include('blog.urls')),
+    url(r'^accounts/', include('accounts.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
