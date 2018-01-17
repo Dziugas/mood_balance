@@ -10,3 +10,6 @@ def blog(request):
 def article_detail(request, slug):
     article = Article.objects.get(slug = slug)
     return render(request, 'blog/article_detail.html', {'article': article})
+
+def article_create(request):
+    return render(request, 'blog/article_create.html')
