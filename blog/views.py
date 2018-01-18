@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Article
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
@@ -15,5 +15,11 @@ def article_detail(request, slug):
 
 @login_required(login_url='/accounts/login/')
 def article_create(request):
-    form = forms.CreateArticle()
+    if request.method == 'POST':
+        form = forms.CreateArticle(request.POST, request.FILES)
+        if form.is_valid():
+            #save new article to db
+            return redirect('blog:blog')
+    else:
+        form = forms.CreateArticle()
     return render(request, 'blog/article_create.html', {'form':form})
