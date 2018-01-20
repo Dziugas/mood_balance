@@ -29,18 +29,18 @@
     </nav>
 
     <nav class="col-6">
-        <ul class="text-right">
+        <ul class="text-right m-0">
             {% if user.is_authenticated %}
-            <li class="d-inline-block ml-5">
-                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+            <li class="d-inline-block">
+                <form class="" action="{% url 'accounts:logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit">Logout</button>
+                    <button role="button" class="btn bg-inverse border-0 text-white" type="submit">Logout</button>
                 </form>
             </li>
-            <li class="d-inline-block ml-5"><a href="{% url 'blog:create' %}" class="highlight">New Article</a></li>
+            <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="highlight">New Article</a></li>
             {% else %}
-            <li class="d-inline-block ml-5"><a href="{% url 'accounts:login' %}">Login</a></li>
-            <li class="d-inline-block ml-5"><a href="{% url 'accounts:signup' %}">Signup</a></li>
+            <li class="d-inline-block m-3"><a href="{% url 'accounts:login' %}">Login</a></li>
+            <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li>
             {% endif%}
         </ul>
     </nav>
