@@ -11,39 +11,40 @@
     <title>Get in touch</title>
 </head>
 <body>
-
-<nav class="navbar navbar-toggleable-sm bg-light navbar-light">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href='/'>Home</a>
-                <a class="nav-item nav-link" href='/blog/'>Blog</a>
-                <a class="nav-item nav-link" href='/about/'>About</a>
-                <a class="nav-item nav-link" href='/contact/'>Contact</a>
+<header class="row container-fluid">
+    <nav class="col-6 navbar navbar-toggleable-sm bg-light navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href='/'>Home</a>
+                    <a class="nav-item nav-link" href='/blog/'>Blog</a>
+                    <a class="nav-item nav-link" href='/about/'>About</a>
+                    <a class="nav-item nav-link" href='/contact/'>Contact</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<nav>
-    <ul>
-        {% if user.is_authenticated %}
-        <li>
-            <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
-                {% csrf_token %}
-                <button type="submit">Logout</button>
-            </form>
-        </li>
-        <li><a href="{% url 'blog:create' %}" class="highlight">New Article</a></li>
-        {% else %}
-        <li><a href="{% url 'accounts:login' %}">Login</a></li>
-        <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
-        {% endif%}
-    </ul>
-</nav>
+    <nav class="col-6">
+        <ul class="text-right">
+            {% if user.is_authenticated %}
+            <li class="d-inline-block ml-5">
+                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+            <li class="d-inline-block ml-5"><a href="{% url 'blog:create' %}" class="highlight">New Article</a></li>
+            {% else %}
+            <li class="d-inline-block ml-5"><a href="{% url 'accounts:login' %}">Login</a></li>
+            <li class="d-inline-block ml-5"><a href="{% url 'accounts:signup' %}">Signup</a></li>
+            {% endif%}
+        </ul>
+    </nav>
+</header>
 
 <div class="jumbotron jumbotron-fluid bg-inverse text-muted text-center mb-0">
     <div class="container">
