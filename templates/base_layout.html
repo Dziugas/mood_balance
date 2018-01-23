@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+          -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Get in touch</title>
 </head>
 <body>
-<header class="row container-fluid">
-    <nav class="col-6 navbar navbar-toggleable-sm bg-light navbar-light">
+<header class="row">
+    <nav class="col-6 navbar navbar-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
                 <span class="navbar-toggler-icon"></span>
@@ -34,10 +36,10 @@
             <li class="d-inline-block">
                 <form class="" action="{% url 'accounts:logout' %}" method="post">
                     {% csrf_token %}
-                    <button role="button" class="btn bg-inverse border-0 text-white" type="submit">Logout</button>
+                    <button role="button" class="btn bg-dark border-0 text-white" type="submit">Logout</button>
                 </form>
             </li>
-            <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="highlight">New Article</a></li>
+            <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="">New Article</a></li>
             {% else %}
             <li class="d-inline-block m-3"><a href="{% url 'accounts:login' %}">Login</a></li>
             <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li>
@@ -46,7 +48,7 @@
     </nav>
 </header>
 
-<div class="jumbotron jumbotron-fluid bg-inverse text-muted text-center mb-0">
+<div class="jumbotron jumbotron-fluid bg-dark text-muted text-center mb-0">
     <div class="container">
         <h1 class="display-3">Mood Balance</h1>
         <p class="lead">Turn on the light</p>
@@ -57,15 +59,18 @@
 {% endblock %}
 
 <footer>
-    <div class="jumbotron jumbotron-fluid bg-inverse text-muted mb-0">
+    <div class="jumbotron jumbotron-fluid bg-dark text-muted mb-0">
         <div class="container text-center">
             <p class="lead"><a class="text-white text-muted" href="#" target="blank">Find me on Facebook</a></p>
         </div>
     </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
@@ -75,5 +80,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+-->
 </body>
 </html>
