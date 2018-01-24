@@ -9,14 +9,15 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
           -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Get in touch</title>
 </head>
 <body>
 <header class="row">
     <nav class="col-6 navbar navbar-light navbar-expand-md">
         <div class="container">
-          <!--  <a class="navbar-brand font-italic" href="#">Mood Balance</a> -->
+            <!--  <a class="navbar-brand font-italic" href="#">Mood Balance</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,7 +31,6 @@
             </div>
         </div>
     </nav>
-
     <nav class="col-6 pl-0">
         <ul class="text-right m-0 pl-0">
             {% if user.is_authenticated %}
@@ -40,10 +40,10 @@
                     <button role="button" class="btn bg-dark border-0 text-white" type="submit">Logout</button>
                 </form>
             </li>
-            <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="">New Article</a></li>
+            <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="text-info">New Article</a></li>
             {% else %}
             <li class="d-inline-block m-3"><a href="{% url 'accounts:login' %}">Login</a></li>
-            <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li>
+        <!--    <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li> -->
             {% endif%}
         </ul>
     </nav>
@@ -52,23 +52,28 @@
 <div class="jumbotron jumbotron-fluid bg-dark text-muted text-center mb-0">
     <div class="container">
         <h1 class="display-3">Mood Balance</h1>
-        <p class="lead">Turn on the light</p>
+        <p class="lead text-muted">Turn on the light</p>
     </div>
 </div>
 
 {% block content %}
 {% endblock %}
-
 <footer>
-    <div class="jumbotron jumbotron-fluid bg-dark text-muted mb-0">
+    <div class="jumbotron jumbotron-fluid bg-dark text-muted p-5 mb-0">
         <div class="container text-center">
-            <p class="lead"><a class="text-white text-muted" href="#" target="blank">Find me on Facebook</a></p>
+            <p class="lead"><a class="text-white text-muted" href="https://www.facebook.com/moodbalance/" target="blank">Find me on Facebook</a></p>
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!--

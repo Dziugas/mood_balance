@@ -1,12 +1,14 @@
 {% extends 'base_layout.html' %}
 {% block content %}
-
+<br>
 <div class="container">
+    <div class="display-4 text-center">Latest Posts</div>
     <div class="row m-3">
         {% for article in articles %}
-        <div class="col-4">
-            <div class="border m-3 p-3">
-                <h2><a href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+        <div class="col-6">
+            <div class="m-3 text-center">
+                <img class="img-fluid mb-3" src="{{ article.thumb.url }}"/>
+                <p><a class="display-5 text-muted" href="{% url 'blog:detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></p>
                 <p>{{article.snippet}}</p>
                 <p>{{ article.date }}</p>
             </div>

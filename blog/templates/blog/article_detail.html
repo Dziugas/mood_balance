@@ -3,13 +3,16 @@
 <br>
 <div class="article-detail">
     <div class="container">
-        <div class="article">
-            <img src="{{ article.thumb.url }}"/>
-            <h2 class="text-center display-5">{{ article.title }}</h2>
+        <div class="text-center">
+            <!--    <img class="img-fluid mb-3" src="{{ article.thumb.url }}"/> -->
+            <h2 class="text-center display-4">{{ article.title }}</h2>
             <br>
-            <p class="lead">{{ article.body }}</p>
-            <p class="lead">{{ article.date }}</p>
-            <p class="lead"> added by {{ article.author }}</p>
+            <div class="text-justify">
+                <p class="lead">{{ article.body }}</p>
+                <p class="lead">{{ article.date }}</p>
+                <p class="lead"> added by {{ article.author }}</p>
+            </div>
+
         </div>
     </div>
 </div>
