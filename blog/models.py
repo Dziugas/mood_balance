@@ -9,8 +9,6 @@ class Article(models.Model):
     thumb = models.ImageField(default='default.png', blank=True)
     author = models.ForeignKey(User, default=None)
 
-#add in later:
-#    author
 
     def __str__(self):
         return self.title
