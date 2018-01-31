@@ -1,1 +1,3 @@
 about/templates/about/includes/text.html
+
+mood_balance/email_info.py
