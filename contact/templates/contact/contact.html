@@ -3,5 +3,11 @@
 <br>
 <div class="container text-center">
     <div class="display-4">Contact me</div>
+    <br>
+    <form method="post">
+      {% csrf_token %}      
+      {{ form.as_p }}
+      <button type="submit">Submitas</button>
+    </form>
 </div>
 {% endblock %}
