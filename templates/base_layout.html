@@ -28,8 +28,9 @@
                     <a class="nav-item nav-link" href='/'>Home</a>
                     <a class="nav-item nav-link" href='/blog/'>Blog</a>
                     <a class="nav-item nav-link" href='/about/'>About</a>
-                    <a class="nav-item nav-link" href='/contact/'>Contact</a>
-                </div>
+                    <a class="nav-item nav-link" href='/contact/'>Contact</a><!--
+                    <a class="nav-item nav-link bg-dark m-auto rounded" href='https://www.facebook.com/moodbalance/'><img src="/static/FB-f-Logo__white_29.png"></a>
+        -->        </div>
             </div>
         </div>
     </nav>
@@ -45,7 +46,7 @@
             <li class="d-inline-block m-3"><a href="{% url 'blog:create' %}" class="text-info">New Article</a></li>
             {% else %}
             <li class="d-inline-block m-3"><a href="{% url 'accounts:login' %}">Login</a></li>
-        <!--    <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li> -->
+            <!--    <li class="d-inline-block m-3"><a href="{% url 'accounts:signup' %}">Signup</a></li> -->
             {% endif%}
         </ul>
     </nav>
@@ -54,7 +55,13 @@
 <div class="jumbotron jumbotron-fluid bg-dark text-muted text-center mb-0">
     <div class="container">
         <h1 class="display-3">Mood Balance</h1>
-        <p class="lead text-muted">Turn on the light</p>
+        <div class="container">
+            <p class="lead text-muted d-inline">Turn on the light</p>
+            <!--
+            <a class="d-inline m-1" href="https://www.facebook.com/moodbalance/">
+                <img class="align-top" src="/static/FB-f-Logo__white_29.png">
+            </a>-->
+        </div>
     </div>
 </div>
 
@@ -62,8 +69,10 @@
 {% endblock %}
 <footer>
     <div class="jumbotron jumbotron-fluid bg-dark text-muted p-5 mb-0">
-        <div class="container text-center">
-            <p class="lead"><a class="text-white text-muted" href="https://www.facebook.com/moodbalance/" target="blank">Find me on Facebook</a></p>
+        <div class="container text-right">
+            <a href="https://www.facebook.com/moodbalance/">
+                <img src="/static/FB-f-Logo__white_29.png">
+            </a>
         </div>
     </div>
 </footer>
