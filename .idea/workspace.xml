@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6006033d-0b2c-43c7-ae01-06463676c53d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/media/FB-f-Logo__white_29.png" afterPath="$PROJECT_DIR$/assets/FB-f-Logo__white_29.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_layout.html" afterPath="$PROJECT_DIR$/templates/base_layout.html" />
     </list>
@@ -16,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mood_balance/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,34 +66,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1739828_414180165422738_876865891_n.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/media/1739828_414180165422738_876865891_n.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2000px-Lotus_position.svg.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/media/2000px-Lotus_position.svg.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base_layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-666">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="292">
+              <caret line="72" column="74" lean-forward="false" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FB-f-Logo__white_29.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/FB-f-Logo__white_29.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -239,11 +206,6 @@
             <path>
               <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
               <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -344,13 +306,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513331147306</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added a jumbotron">
-      <created>1515242193225</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1515242193225</updated>
     </task>
     <task id="LOCAL-00016" summary="changes in header bar">
       <created>1515244004908</created>
@@ -688,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517326624756</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="played with and finally decided to add FB logo to the footer &amp; keep it simple">
+      <created>1517483169930</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1517483169931</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -719,7 +681,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set up admin site" />
     <MESSAGE value="Added html template tags -&gt; published the articles" />
     <MESSAGE value="Set up the static in urls.py and settings.py, linked styles.css to blog app" />
     <MESSAGE value="Fixed global templates directory and extended with about.html for about app" />
@@ -744,20 +705,14 @@
     <MESSAGE value="Styled the forms and Logout button" />
     <MESSAGE value="Slugify" />
     <MESSAGE value="fixed Slugify..." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Slugify..." />
+    <MESSAGE value="played with and finally decided to add FB logo to the footer &amp; keep it simple" />
+    <option name="LAST_COMMIT_MESSAGE" value="played with and finally decided to add FB logo to the footer &amp; keep it simple" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contact/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1032,6 +987,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/media/2000px-Lotus_position.svg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/default.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/FB-f-Logo__white_29.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/1739828_414180165422738_876865891_n.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1042,25 +1017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/1739828_414180165422738_876865891_n.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/2000px-Lotus_position.svg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/FB-f-Logo__white_29.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-666">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="292">
+          <caret line="72" column="74" lean-forward="false" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
           <folding />
         </state>
       </provider>
