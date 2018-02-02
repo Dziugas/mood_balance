@@ -19,6 +19,7 @@ EMAIL_HOST_USER = EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
 EMAIL_PORT = EMAIL_PORT
 
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

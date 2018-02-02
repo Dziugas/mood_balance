@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from contact.forms import ContactForm
 
 class ContactView(TemplateView):
@@ -15,16 +15,19 @@ class ContactView(TemplateView):
         form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
+            email_address = form.cleaned_data['email']
+            email = EmailMessage('Hello', ('Whats up???, my name is %s' %name), to=[email_address])
+            email.send()
             return redirect('contact:contact')
 
-        args = {'form':form, 'name':name, 'email':email}
-        return render(request, self.template_name, args)
+#            subject = name
+#            message = 'labas!'
+#            from_email = settings.EMAIL_HOST_USER
+#            recipient_list = [email]
+#            send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+
+#        args = {'form':form, 'name':name, 'email':email_address}
+#        return render(request, self.template_name, args)
 
 
-        subject = 'pimpadryla'
-        message = 'Nuejai i kontaktu forma, ane??'
-        from_email = settings.EMAIL_HOST_USER
-        to_list = [settings.EMAIL_HOST_USER]
 
-        send_mail(subject, message, from_email, to_list, fail_silently=True)
