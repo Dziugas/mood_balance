@@ -4,10 +4,10 @@
 <div class="container text-center">
     <div class="display-4">Contact me</div>
     <br>
-    <form method="post">
+    <form class="mb-5" method="post">
       {% csrf_token %}      
       {{ form.as_p }}
-      <button type="submit">Submitas</button>
+      <button type="submit">Send</button>
     </form>
 </div>
 {% endblock %}

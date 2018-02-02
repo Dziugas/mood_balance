@@ -1,7 +1,7 @@
 from django.conf import settings
-from django.views.generic import TemplateView
-from django.shortcuts import render, redirect
 from django.core.mail import send_mail, EmailMessage
+from django.shortcuts import render, redirect
+from django.views.generic import TemplateView
 from contact.forms import ContactForm
 
 class ContactView(TemplateView):
@@ -16,7 +16,8 @@ class ContactView(TemplateView):
         if form.is_valid():
             name = form.cleaned_data['name']
             email_address = form.cleaned_data['email']
-            email = EmailMessage('Hello', ('Whats up???, my name is %s' %name), to=[email_address])
+            message = form.cleaned_data['message']
+            email = EmailMessage('Message from the Mood Balance contact form', message, to=[settings.EMAIL_HOST_USER])
             email.send()
             return redirect('contact:contact')
 
