@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6006033d-0b2c-43c7-ae01-06463676c53d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/slugify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_layout.html" afterPath="$PROJECT_DIR$/templates/base_layout.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,17 +67,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles.css">
+      <file leaf-file-name="base_layout.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article_create.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article_create.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/article_create.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -181,7 +182,6 @@
         <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/signup.html" />
         <option value="$PROJECT_DIR$/assets/styles.css" />
-        <option value="$PROJECT_DIR$/templates/base_layout.html" />
         <option value="$PROJECT_DIR$/mood_balance/settings.py" />
         <option value="$PROJECT_DIR$/contact/forms.py" />
         <option value="$PROJECT_DIR$/contact/templates/contact/contact.html" />
@@ -192,6 +192,7 @@
         <option value="$PROJECT_DIR$/assets/slugify.js" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/article_create.html" />
+        <option value="$PROJECT_DIR$/templates/base_layout.html" />
       </list>
     </option>
   </component>
@@ -244,29 +245,6 @@
             <path>
               <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
               <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mood_balance" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mood_balance" type="b2602c69:ProjectViewProjectNode" />
@@ -395,13 +373,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513331147306</updated>
-    </task>
-    <task id="LOCAL-00021" summary="adjusted jumbotron margin-bottom style">
-      <created>1515252231961</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1515252231961</updated>
     </task>
     <task id="LOCAL-00022" summary="Style changes">
       <created>1515260107222</created>
@@ -739,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518630209410</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Brought back the slugify.js file">
+      <created>1518631581997</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1518631581997</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -769,7 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created and linked article_details" />
     <MESSAGE value="Added media for the blogposts" />
     <MESSAGE value="Created the accounts app, signup page and the signup form" />
     <MESSAGE value="Saving users" />
@@ -794,7 +771,8 @@
     <MESSAGE value="Email title" />
     <MESSAGE value="email experiments" />
     <MESSAGE value="Removed the article_create form name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed the article_create form name" />
+    <MESSAGE value="Brought back the slugify.js file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Brought back the slugify.js file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -964,14 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mood_balance/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1025,7 +995,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,6 +1088,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
       </provider>
