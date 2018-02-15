@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6006033d-0b2c-43c7-ae01-06463676c53d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_layout.html" afterPath="$PROJECT_DIR$/templates/base_layout.html" />
     </list>
@@ -70,8 +69,8 @@
       <file leaf-file-name="base_layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="289">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -373,13 +372,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513331147306</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Style changes">
-      <created>1515260107222</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1515260107222</updated>
     </task>
     <task id="LOCAL-00023" summary="Added a menu navbar to the top, commented some sections">
       <created>1515402871144</created>
@@ -717,13 +709,21 @@
       <option name="project" value="LOCAL" />
       <updated>1518631581997</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Adding favicon">
+      <created>1518720889341</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1518720889342</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16172107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -747,7 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added media for the blogposts" />
     <MESSAGE value="Created the accounts app, signup page and the signup form" />
     <MESSAGE value="Saving users" />
     <MESSAGE value="Login forms" />
@@ -772,7 +771,8 @@
     <MESSAGE value="email experiments" />
     <MESSAGE value="Removed the article_create form name" />
     <MESSAGE value="Brought back the slugify.js file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Brought back the slugify.js file" />
+    <MESSAGE value="Adding favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding favicon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1094,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
