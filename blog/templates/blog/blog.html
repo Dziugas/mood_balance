@@ -1,4 +1,7 @@
 {% extends 'base_layout.html' %}
+{% block title %}
+Blog
+{% endblock %}
 {% block content %}
 <br>
 <div class="container">
@@ -11,7 +14,7 @@
                     <img class="img-fluid mb-3" src="{{ article.thumb.url }}"/>
                 </a>
                 <p><a class="display-4 text-dark" id="article_name" href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></p>
-                <p>{{article.snippet}}</p>
+                <!--<p>{{article.snippet}}</p>-->
                 <p>{{ article.date }}</p>
             </div>
         </div>
