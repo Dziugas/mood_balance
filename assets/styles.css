@@ -27,3 +27,7 @@ input {
 button{
     cursor: pointer;
 }
+
+#article_name:hover{
+    text-decoration: none;
+}
