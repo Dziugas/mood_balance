@@ -10,7 +10,7 @@
                 <a href="{% url 'blog:detail' slug=article.slug %}">
                     <img class="img-fluid mb-3" src="{{ article.thumb.url }}"/>
                 </a>
-                <p><a class="display-4 text-dark" id="article_name" href="{% url 'blog:detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></p>
+                <p><a class="display-4 text-dark" id="article_name" href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></p>
                 <p>{{article.snippet}}</p>
                 <p>{{ article.date }}</p>
             </div>
