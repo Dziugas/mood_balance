@@ -5,7 +5,7 @@ from . import forms
 
 
 def blog(request):
-    articles = Article.objects.all().order_by('date')
+    articles = Article.objects.all().order_by('-date')
     return render (request, 'blog/blog.html', {'articles': articles})
 
 def article_detail(request, slug):
