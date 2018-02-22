@@ -35,7 +35,7 @@ SECRET_KEY = '0i5qvs$s4odv30#-s2a$b9jd60nhjv6i1h_k=4&2z_qax*)!4x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['opshrus.pythonanywhere.com']
 
 
 # Application definition
@@ -70,7 +70,7 @@ ROOT_URLCONF = 'mood_balance.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
