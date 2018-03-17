@@ -8,12 +8,12 @@ Blog
     <div class="display-4 text-center">Latest Posts</div>
     <div class="row m-3">
         {% for article in articles %}
-        <div class="col-6">
+        <div class="col-sm-12 col-lg-6">
             <div class="m-3 text-center">
                 <a href="{% url 'blog:detail' slug=article.slug %}">
-                    <img class="img-fluid mb-3" src="{{ article.thumb.url }}"/>
+                    <img class="img-fluid mb-2" src="{{ article.thumb.url }}"/>
                 </a>
-                <p><a class="display-4 text-dark" id="article_name" href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></p>
+                <p><a class="lg display-4 text-dark" id="article_name" href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></p>
                 <!--<p>{{article.snippet}}</p>-->
                 <p>{{ article.date }}</p>
             </div>
